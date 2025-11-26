@@ -27,34 +27,78 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1   &kp N2   &kp N3          &kp N4          &kp N5            &kp N6          &kp N7           &kp N8       &kp N9         &kp N0       &kp BSPC
-&kp TAB         &kp DE_Z &kp DE_Y &kp DE_U        &kp DE_A        &kp DE_Q          &kp DE_P        &kp DE_B         &kp DE_M     &kp DE_L       &kp DE_F     &kp DE_J
-&kp LCTRL       &kp DE_C &kp DE_S &kp DE_I        &kp DE_E        &kp DE_O          &kp DE_D        &kp DE_T         &kp DE_N     &kp DE_R       &kp DE_H     &kp DE_SZ
-&kp LSHFT       &kp DE_V &kp DE_X &kp DE_U_UMLAUT &kp DE_A_UMLAUT &kp DE_O_UMLAUT   &kp DE_W        &kp DE_G         &kp DE_COMMA &kp DE_PERIOD  &kp DE_K     &kp RSHFT
-                                  &kp LEFT_ARROW  &kp SPACE     &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                                  &kp LEFT_ALT  &kp SPACE         &kp DOWN_ARROW
+&kp ESC         &kp N1     &kp N2   &kp N3          &kp N4          &kp N5            &kp N6          &kp N7           &kp N8       &kp N9         &kp N0       &kp BSPC
+&kp TAB         &kp DE_Z   &kp DE_Y &kp DE_U        &kp DE_A        &kp DE_Q          &kp DE_P        &kp DE_B         &kp DE_M     &kp DE_L       &kp DE_F     &kp DE_J
+&kp LCTRL       &kp DE_C   &kp DE_S &kp DE_I        &kp DE_E        &kp DE_O          &kp DE_D        &kp DE_T         &kp DE_N     &kp DE_R       &kp DE_H     &kp DE_SZ
+&kp LSHFT       &lt 3 DE_V &kp DE_X &kp DE_U_UMLAUT &kp DE_A_UMLAUT &kp DE_O_UMLAUT   &kp DE_W        &kp DE_G         &kp DE_COMMA &kp DE_PERIOD  &kp DE_K     &kp RSHFT
+                                  &mo 1             &kp SPACE       &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
+                                                    &kp LEFT_ALT    &kp SPACE         &kp DOWN_ARROW
             >;
 
             trackball-bindings = <&tmv_coarse>;
         };
 
-        layer_1 {
+        s_char {
             bindings = <
-&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT   &kp F1         &kp F2        &kp F3                &kp F4                 &kp DEL
-&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp BSLH   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &trans     &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
-                                                 &kp LEFT_WIN  &kp SPACE     &trans         &kp ENTER  &kp BACKSPACE
-                                                               &none         &none          &trans
+&trans     &kp LG(DE_N6)     &kp LG(DE_N7)  &kp LG(DE_N8)    &kp LG(DE_N9)  &kp LG(DE_N0)    &none      &none         &none             &none         &none              &none
+&kp TAB    &kp LC(LS(DE_T))  &kp LC(W)      &kp LC(LS(TAB))  &kp LC(TAB)    &kp LC(DE_T)     &kp PG_UP  &kp LC(LEFT)  &kp LC(NUMBER_1)  &kp LC(J)     &kp LC(RIGHT)      &kp HOME
+&kp LCTRL  &mo 5             &mo 4          &mo 3            &mo 2          &none            &kp PG_DN  &kp LEFT      &kp UP            &kp DOWN      &kp RIGHT          &kp END
+&kp LSHFT  &kp LEFT          &kp UP         &kp DOWN         &kp RIGHT      &kp LG(LS(DE_Q)) &none      &kp DE_MINUS  &kp DE_SEMICOLON  &kp DE_COLON  &kp DE_UNDERSCORE  &kp ESC
+                                            &kp LEFT_WIN     &kp SPACE      &trans           &kp ENTER  &kp BACKSPACE
+                                                             &none          &none            &trans
             >;
         };
 
-        layer_2 {
+        szch {
             bindings = <
-&kp F12           &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6        &kp F7         &kp F8    &kp F9     &kp F10  &kp F11
-&kp LS(GRAVE)     &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(LBKT)    &kp LS(RBKT)  &none          &trans    &none      &none    &trans
-&kp LEFT_CONTROL  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)     &none           &kp LS(BSLH)  &trans         &kp UP    &trans     &trans   &trans
-&kp LEFT_SHIFT    &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &none           &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans              &trans                &trans         &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp DE_EXCLAMATION  &kp DE_SINGLE_QUOTE   &kp DE_PLUS    &kp DE_EQUAL     &kp DE_GRAVE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp DE_QUESTION     &kp DE_DOUBLE_QUOTES  &kp DE_HASH    &kp DE_ASTERISK  &kp DE_CARET
+&trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EURO  &kp DE_AT           &kp DE_AMPERSAND      &kp DE_DOLLAR  &kp DE_PERCENT   &kp DE_DOLLAR
+                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
+                                                         &trans         &trans          &none
+            >;
+        };
+
+	brackets {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans                   &trans                    &trans             &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_LESS_THAN   &kp DE_GREATER_THAN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_BRACE  &kp DE_RIGHT_BRACE   &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &kp DE_SLASH             &kp DE_BACKSLASH          &kp DE_PIPE        &kp DE_TILDE         &trans
+                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
+                                                         &trans         &trans          &none
+            >;
+        };
+
+	num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans      &kp K_CALCULATOR  &kp DE_EQUAL  &none      &none      &none            &none
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DE_PLUS       &kp DE_N7     &kp DE_N8  &kp DE_N9  &kp DE_ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DE_MINUS      &kp DE_N4     &kp DE_N5  &kp DE_N6  &kp DE_SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DE_PERIOD     &kp DE_N1     &kp DE_N2  &kp DE_N3  &kp DE_N0        &kp DE_COMMA
+                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
+                                                         &trans         &trans          &none
+            >;
+        };
+
+	fn {
+            bindings = <
+&trans  &mo 6   &trans  &trans        &trans        &trans       &trans  &trans  &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans  &trans  &trans  &trans        &trans        &trans       &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans  &trans  &trans        &trans        &trans       &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
+                                                         &trans         &trans          &none
+            >;
+        };
+
+	ble {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &bt BT_CLR_ALL  &none  &none  &none  &none  &bt BT_SEL 0
+&none  &none  &none  &none  &none  &none    &none           &none  &none  &none  &none  &bt BT_SEL 1
+&none  &none  &none  &none  &none  &none    &none           &none  &none  &none  &none  &bt BT_SEL 2
+&none  &none  &none  &none  &none  &none    &soft_off       &none  &none  &none  &none  &bt BT_SEL 3
                                           &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
                                                          &trans         &trans          &none
             >;
@@ -71,7 +115,7 @@
             >;
         };
 
-        layer_4 {
+        Mouse_scroll {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
@@ -81,10 +125,10 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tsl>;//滚轮层
+            trackball-bindings = <&tsl>;//
         };
 
-        layer_5 {
+        Mouse_fine {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
@@ -94,7 +138,7 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;//精准指针层
+            trackball-bindings = <&tmv_fine>;
         };
     };
 };

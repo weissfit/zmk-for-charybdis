@@ -30,7 +30,7 @@
 &kp ESC         &kp N1     &kp N2   &kp N3          &kp N4          &kp N5            &kp N6          &kp N7           &kp N8       &kp N9         &kp N0       &kp BSPC
 &kp TAB         &kp DE_Z   &kp DE_Y &kp DE_U        &kp DE_A        &kp DE_Q          &kp DE_P        &kp DE_B         &kp DE_M     &kp DE_L       &kp DE_F     &kp DE_J
 &kp LCTRL       &kp DE_C   &kp DE_S &kp DE_I        &kp DE_E        &kp DE_O          &kp DE_D        &kp DE_T         &kp DE_N     &kp DE_R       &kp DE_H     &kp DE_SZ
-&kp LSHFT       &lt 3 DE_V &kp DE_X &kp DE_U_UMLAUT &kp DE_A_UMLAUT &kp DE_O_UMLAUT   &kp DE_W        &kp DE_G         &kp DE_COMMA &kp DE_PERIOD  &kp DE_K     &kp RSHFT
+&kp LSHFT       &lt 6 DE_V &kp DE_X &kp DE_U_UMLAUT &kp DE_A_UMLAUT &kp DE_O_UMLAUT   &kp DE_W        &kp DE_G         &kp DE_COMMA &kp DE_PERIOD  &kp DE_K     &kp RSHFT
                                   &mo 1             &kp SPACE       &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
                                                     &kp LEFT_ALT    &kp SPACE         &kp DOWN_ARROW
             >;
@@ -84,7 +84,7 @@
 
 	fn {
             bindings = <
-&trans  &mo 6   &trans  &trans        &trans        &trans       &trans  &trans  &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &trans        &trans        &trans       &trans  &trans  &trans   &trans   &trans   &trans
 &trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
 &trans  &trans  &trans  &trans        &trans        &trans       &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &trans  &trans  &trans  &trans        &trans        &trans       &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
@@ -98,8 +98,8 @@
 &none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
 &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
 &none        &trans        &trans        &mkp MCLK     &trans     &none         &none       &trans     &mkp MCLK     &trans        &trans        &none
-&bootloader  &trans        &mkp RCLK     &mo 4         &mkp LCLK  &mo 5         &mo 5       &mkp LCLK  &mo 4         &mkp RCLK     &trans        &bootloader
-                                         &mo 5         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
+&bootloader  &trans        &mkp RCLK     &mo 7         &mkp LCLK  &mo 8         &mo 8       &mkp LCLK  &mo 7         &mkp RCLK     &trans        &bootloader
+                                         &mo 8         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
                                                        &none      &trans        &trans
             >;
         };
@@ -114,7 +114,7 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tsl>;//
+            trackball-bindings = <&tsl>;
         };
 
         Mouse_fine {

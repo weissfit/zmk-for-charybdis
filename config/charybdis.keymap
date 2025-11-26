@@ -93,17 +93,6 @@
             >;
         };
 
-	ble {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &bt BT_CLR_ALL  &none  &none  &none  &none  &bt BT_SEL 0
-&none  &none  &none  &none  &none  &none    &none           &none  &none  &none  &none  &bt BT_SEL 1
-&none  &none  &none  &none  &none  &none    &none           &none  &none  &none  &none  &bt BT_SEL 2
-&none  &none  &none  &none  &none  &none    &soft_off       &none  &none  &none  &none  &bt BT_SEL 3
-                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
-                                                         &trans         &trans          &none
-            >;
-        };
-
         Mouse {
             bindings = <
 &none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
